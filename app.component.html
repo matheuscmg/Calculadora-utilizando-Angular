@@ -1,0 +1,43 @@
+<div class="full">
+
+
+  <h1 class="text-center">Angular Calculator</h1>
+
+  <div class="calculator">
+    <input type="text" [(ngModel)]="screen">
+  </div>
+
+  <div class="container">
+
+    <p>
+      <input type="button" class="button" value="1" (click)='getvalor("1")'>
+      <input type="button" class="button" value="2" (click)='getvalor("2")'>
+      <input type="button" class="button" value="3" (click)='getvalor("3")'>
+      <input type="button" class="buttonbtn" value="+" (click)='condition("+")'>
+    </p>
+
+    <p>
+      <input type="button" class="button" value="4" (click)='getvalor("4")'>
+      <input type="button" class="button" value="5" (click)='getvalor("5")'>
+      <input type="button" class="button" value="6" (click)='getvalor("6")'>
+      <input type="button" class="buttonbtn" value="-" (click)='condition("-")'>
+    </p>
+
+    <p>
+      <input type="button" class="button" value="7" (click)='getvalor("7")'>
+      <input type="button" class="button" value="8" (click)='getvalor("8")'>
+      <input type="button" class="button" value="9" (click)='getvalor("9")'>
+      <input type="button" class="button" value="*" (click)='condition("*")'>
+    </p>
+
+    <p>
+      
+      <input type="button" class="button" value="/" (click)='condition("/")'>
+      <input type="button" class="button" value="0" (click)='getvalor("0")'>
+      <input type="button" class="button" value="c" (click)='clear()'>
+      <input type="button" class="button" value="=" (click)='result()'>
+    </p>
+
+  </div>
+
+</div>
